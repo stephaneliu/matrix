@@ -26,6 +26,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "solargraph-rails", "0.3.0"
   gem 'web-console' # Use console on exceptions pages [https://github.com/rails/web-console]
   # gem "rack-mini-profiler" # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
 end
