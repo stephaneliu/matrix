@@ -8,6 +8,7 @@ ruby '3.2.1'
 
 gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 
+# Default
 gem 'bootsnap', require: false # Reduces boot times through caching; required in config/boot.rb
 gem 'jbuilder'                 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'pg', '~> 1.1'             # Use postgresql as the database for Active Record
@@ -16,6 +17,9 @@ gem 'redis', '~> 4.0'          # Use Redis adapter to run Action Cable in produc
 gem 'sprockets-rails'          # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'stimulus-rails'           # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'turbo-rails'              # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
+
+# Asset management
+gem 'vite_rails' # Frontend tooling [https://github.com/ElMassimo/vite_ruby]
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw] # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
